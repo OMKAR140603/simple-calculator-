@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+    
+        function add(){  //addition fumction 
+            var x1,x2,x3;
+            x1=Number(document.getElementById("i1").value);
+            x2=Number(document.getElementById("i2").value);
+            x3=  x1 + x2;
+            document.getElementById("answer").value=x3;
+        }
+
+        function substarct(){ //substraction function
+            var x1,x2,x3;
+            x1=Number(document.getElementById("j1").value);
+            x2=Number(document.getElementById("j2").value);
+            x3=  x1 - x2;
+            document.getElementById("answer2").value=x3;
+        }
+        function multiply(){//multiply function
+            var x1,x2,x3;
+            x1=Number(document.getElementById("k1").value);
+            x2=Number(document.getElementById("k2").value);
+            x3=  x1 * x2;
+            document.getElementById("answer3").value=x3;
+        }
+        function division(){
+            var x1,x2,x3;
+            x1=Number(document.getElementById("w1").value);
+            x2=Number(document.getElementById("w2").value);
+            x3=  x1 / x2;
+            document.getElementById("answer4").value=x3;
+        }
+    </script>
+</head>
+<body>
+    <!--addition starts-->
+    <div class="container" style="border: 2px solid black;padding: 20px;" m=3 p=3>
+        <marquee behavior="" direction="">!!!!Addition here!!!!</marquee>
+    <div class="colour"> Enter  1st number :  
+    <input type="number" id="i1" placeholder="number1" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> <br>
+    Enter 2nd number :
+    <input type="number" id="i2" placeholder="number2" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> </div> </div> <hr>
+    <div class="container-fluid">
+    <button type="button" class="btn btn-success" style="margin-left: 50%;" value="Operation" onclick="add()"  >Sum </button> 
+</div> 
+    <br>
+    <div >
+   <input type="text" value="" placeholder="Sum" id="answer" style="border: 3px solid black;margin-left: 47%;text-align: center;color: rgb(255, 127, 36);">
+</div>
+<hr>
+<!--addition ends -->
+<!--substractrion starts-->
+<div class="container" style="border: 2px solid black;padding: 20px;" m=3 p=3>
+    <marquee behavior="" direction=""> !!!!substraction here !!!!</marquee>
+    <div class="colour"> Enter  1st number :  
+    <input type="number" id="j1" placeholder="number1" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> <br>
+    Enter 2nd number :
+    <input type="number" id="j2" placeholder="number2" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> </div> </div> <hr>
+    <div class="container-fluid">
+    <button type="button" class="btn btn-dark" style="margin-left: 50%;" value="Operation" onclick="substarct()"  >substract </button> 
+</div> 
+    <br>
+    <div >
+   <input type="text" value="" placeholder="substraction" id="answer2" style="border: 3px solid black;margin-left: 47%;text-align: center;color: rgb(255, 127, 36);">
+</div>
+<hr>
+<!--substraction ends-->
+<!--multiplication starts-->
+<div class="container" style="border: 2px solid black;padding: 20px;" m=3 p=3>
+    <marquee behavior="" direction="">!!!!Multiplication here!!!!</marquee>
+    <div class="colour"> Enter  1st number :  
+    <input type="number" id="k1" placeholder="number1" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> <br>
+    Enter 2nd number :
+    <input type="number" id="k2" placeholder="number2" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> </div> </div> <hr>
+    <div class="container-fluid">
+    <button type="button" class="btn btn-warning" style="margin-left: 50%;" value="Operation" onclick="multiply()"  >multiply </button> 
+</div> 
+    <br>
+    <div >
+   <input type="text" value="" placeholder="multiplication" id="answer3" style="border: 3px solid black;margin-left: 47%;text-align: center;color: rgb(255, 127, 36);">
+</div>
+<hr>
+<!--multiplication ends-->
+<!--division starts-->
+<marquee behavior="" direction="">!!!!Division Here!!!!</marquee>
+<div class="container" style="border: 2px solid black;padding: 20px;" m=3 p=3>
+    <div class="colour"> Enter  1st number :  
+    <input type="number" id="w1" placeholder="number1" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> <br>
+    Enter 2nd number :
+    <input type="number" id="w2" placeholder="number2" style="border: 2px solid black;margin-left: 20px;text-align: center;"> <br> </div> </div> <hr>
+    <div class="container-fluid">
+    <button type="button" class="btn btn-danger" style="margin-left: 50%;" value="Operation" onclick="division()"  >divide </button> 
+</div> 
+    <br>
+    <div >
+   <input type="text" value="" placeholder="division" id="answer4" style="border: 3px solid black;margin-left: 47%;text-align: center;color: rgb(255, 127, 36);">
+</div>
+<hr>
+<!--division ends-->
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

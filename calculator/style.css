@@ -1,0 +1,21 @@
+body{
+    margin: 3px;
+    border: 3px solid black;
+    padding: 20px;
+    background: url(./pngtree-full-irregular-watercolor-splash-ink-light-color-background-material-colorteenage-girlwatercolorposterbackgroundh5photo-image_57012.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.colour{
+    font: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(159, 57, 255);
+}
+marquee{
+    color: firebrick;
+    font: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
