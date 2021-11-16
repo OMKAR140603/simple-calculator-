@@ -1,0 +1,30 @@
+*{
+    margin: 3px;
+   
+    
+}
+.container{
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.container-fluid{
+    
+    border: 3px solid black;
+    background-image: url(./silent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 210, 10); 
+    margin-top: 30px;
+    
+}
+body{
+    border: 2px solid black;
+    background: url(./images\ \(3\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
